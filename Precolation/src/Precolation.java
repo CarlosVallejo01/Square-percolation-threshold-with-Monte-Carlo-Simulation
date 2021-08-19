@@ -65,7 +65,7 @@ public class Precolation {
         up = a + N;
 
 
-        if ((a >= 0) && (a%N !=0) && (status[left] == 1))
+        if ((a > 0) && (a%N !=0) && (status[left] == 1))
             union(a, left);
 
         if ((right < (N*N)) && (right % N != 0) && (status[right] == 1))
